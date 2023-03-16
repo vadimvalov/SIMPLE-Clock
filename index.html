@@ -10,13 +10,13 @@
   <body
     class="h-screen w-screen bg-gradient-to-b from-pink-400 to-indigo-500 p-12"
   >
-    <div class="flex w-full justify-center items-center">
+    <div class="flex flex-col w-full h-full justify-center items-center">
       <div
         id="clock"
-        class="text-3xl bg-zinc-300 p-7 rounded-3xl shadow-lg"
+        class="text-3xl bg-zinc-300 p-7 rounded-3xl shadow-lg m-5"
       ></div>
+      <div class="text-3xl text-bold text-center">Live time.</div>
     </div>
-    <div class="flex justify-center text-3xl text-bold mt-3">Live time.</div>
     <script type="module">
       import { realtimeClock } from "./main.js";
       realtimeClock();
